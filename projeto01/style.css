@@ -69,7 +69,7 @@ main {
     margin-bottom: 20px;
     margin-top: 140px;
     margin-right: 40px;
-    padding: 20px 40px 20px 20px;
+    padding: 20px 40px 20px 20px;    /*70*/
     border-radius: 20px;
 }
 
@@ -134,11 +134,11 @@ div > h2 {
 }
 
 .quadrado {
-      width: 370px;
+      width: 350px;
       height: 250px;;
       flex-direction: row; /*para deixar a div do lado. column, se quiser empilhar */
       justify-content: center;   /* Centraliza horizontalmente */
-      gap: 20px;                 /* Espaço entre as divs */
+      gap: 15px;                 /* Espaço entre as divs */
       margin: auto;
       flex-wrap: wrap;
       display: flex;
