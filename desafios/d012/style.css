@@ -1,1 +1,21 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 30px;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+header > p {
+    
+}
