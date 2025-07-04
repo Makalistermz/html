@@ -5,17 +5,44 @@
     padding: 0px;
 }
 
+html, body {
+    min-height: 100%;  /*tamanho minimo do meu html*/
+    background-color: darkgray;
+}
+
 header {
     background-color: black;
     color: white;
-    margin: auto;
-    padding: 30px;
-}
-
-header > h1 {
     text-align: center;
 }
 
+header > h1 {
+    padding-top: 40px;
+    font-variant: small-caps;
+}
+
 header > p {
-    
+    padding-bottom: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(105, 60, 39);
+}
+
+section.normal {
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
