@@ -6,7 +6,7 @@
 }
 
 html, body {
-    min-height: 100%;  /*tamanho minimo do meu html*/
+    min-height: 100vh;  /*tamanho minimo do meu html*/
     background-color: darkgray;
 }
 
@@ -36,8 +36,26 @@ a:hover {
     color: rgb(105, 60, 39);
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;  /*espaçamento entre linhas*/
+    padding-left: 30px;
+}
+
 section.normal {
     background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(48, 47, 47);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.288);
+    width: 400px;
 }
 
 footer {
