@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,18 +20,39 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {  /*quando fizer a rolagem o cabeçalho ficara grudado no topo do site*/ 
+            position: sticky; /*"grudavel"*/
+            top: -1;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) { /*cada linha impar ele pinta a linha*/
+            background-color: lightblue;
+        }
+
+        tbody > tr:nth-child(even) { /*cada linha par ele pinta a linha*/
+            background-color: rgb(178, 230, 173);
         }
     </style>
 </head>
 <body>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 150px;">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -49,7 +71,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>0000</td>
             </tr>
         </tfoot>
